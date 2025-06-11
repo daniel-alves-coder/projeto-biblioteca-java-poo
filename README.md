@@ -10,7 +10,7 @@ Neste sistema, a biblioteca pode gerenciar dois tipos de materiais: `livros` e `
 
 
 
-### O sistema deve apresentar um menu com 4 opções:
+### O sistema deve apresentar um menu com 5 opções:
 
 * Adicionar Novo Livro ou Revista
 * Pesquisar Livro ou Revista por Título 
