@@ -16,6 +16,4 @@ public class Revista extends Material{
     public String toString() {
         return "Revista - TITULO: " + getTitulo() + " ,AUTOR: " + getAutor() + ", EDITORA: " + getEditora() + ", NUMERO: " + numero;
     }
-
-
 }

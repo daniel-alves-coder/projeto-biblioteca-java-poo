@@ -19,5 +19,4 @@ public class Livro extends Material{
         return "Livro - TITULO: " + getTitulo() + " ,AUTOR: " + getAutor() + ", EDITORA: " + getEditora() + ", GENERO: " + genero;
     }
 
-
 }

@@ -29,7 +29,7 @@ public class Main {
             System.out.print("DIGITE A OPÇÃO: ");
             opcao = scanner.nextInt();
             scanner.nextLine();
-            
+
             System.out.println("--------------------------");
 
             switch (opcao) {
@@ -96,7 +96,7 @@ public class Main {
                 case 3: //PESQUISAR
 
                     do {
-                        System.out.print("DIGITE O TITULO DO LIVRO: ");
+                        System.out.print("DIGITE O TITULO: ");
                         titulo = scanner.nextLine();
                         System.out.println("--------------------------");
 
@@ -123,7 +123,7 @@ public class Main {
                     break;
                 case 4: //REMOVER
                     do {
-                        System.out.print("DIGITE O TITULO DO LIVRO: ");
+                        System.out.print("DIGITE O TITULO: ");
                         titulo = scanner.nextLine();
                         System.out.print("DIGITE O NOME DO AUTOR: ");
                         autor = scanner.nextLine();
@@ -159,7 +159,6 @@ public class Main {
             }
 
         } while (opcao != 5);
-
 
         scanner.close();
     }

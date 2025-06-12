@@ -26,18 +26,6 @@ public abstract class Material {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Material material = (Material) o;
-        return Objects.equals(titulo, material.titulo) && Objects.equals(autor, material.autor) && Objects.equals(editora, material.editora);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(titulo, autor, editora);
-    }
-
-    @Override
     public String toString() {
         return "Material{" +
                 "titulo='" + titulo + '\'' +
@@ -46,4 +34,15 @@ public abstract class Material {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Material material = (Material) o;
+        return Objects.equals(titulo, material.titulo) && Objects.equals(autor, material.autor);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(titulo, autor);
+    }
 }
