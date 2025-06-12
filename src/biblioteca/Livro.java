@@ -10,13 +10,14 @@ public class Livro extends Material{
         this.genero = genero;
     }
 
+    public Genero getGenero() {
+        return genero;
+    }
 
     @Override
     public String toString() {
         return "Livro - TITULO: " + getTitulo() + " ,AUTOR: " + getAutor() + ", EDITORA: " + getEditora() + ", GENERO: " + genero;
     }
 
-    public Genero getGenero() {
-        return genero;
-    }
+
 }

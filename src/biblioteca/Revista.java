@@ -8,13 +8,14 @@ public class Revista extends Material{
         this.numero = numero;
     }
 
+    public int getNumero() {
+        return numero;
+    }
 
     @Override
     public String toString() {
         return "Revista - TITULO: " + getTitulo() + " ,AUTOR: " + getAutor() + ", EDITORA: " + getEditora() + ", NUMERO: " + numero;
     }
 
-    public int getNumero() {
-        return numero;
-    }
+
 }

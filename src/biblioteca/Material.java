@@ -2,7 +2,7 @@ package biblioteca;
 
 import java.util.Objects;
 
-public class Material {
+public abstract class Material {
     private String titulo;
     private String autor;
     private String editora;
@@ -11,6 +11,18 @@ public class Material {
         this.titulo = titulo;
         this.autor = autor;
         this.editora = editora;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public String getEditora() {
+        return editora;
     }
 
     @Override
@@ -34,15 +46,4 @@ public class Material {
                 '}';
     }
 
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public String getAutor() {
-        return autor;
-    }
-
-    public String getEditora() {
-        return editora;
-    }
 }
